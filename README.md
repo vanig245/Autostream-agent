@@ -39,7 +39,7 @@ autostream-agent/
 ├── main.py                     # Entry point
 ├── requirements.txt            # Dependencies
 └── README.md
-
+```
 ---
 
 ## How to Run Locally
