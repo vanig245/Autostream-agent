@@ -23,18 +23,21 @@ The agent can:
 
 ---
 
+---
+
 ## Project Structure
 
+```text
 autostream-agent/
 ├── knowledge_base/
-│   └── autostream_kb.json     # Pricing & policies data
+│   └── autostream_kb.json      # Pricing & policies data
 ├── agent/
-│   ├── __init__.py            # Package init
-│   ├── rag.py                 # RAG pipeline
-│   ├── tools.py               # Lead capture tool
-│   └── agent.py               # Main agent logic
-├── main.py                    # Entry point
-├── requirements.txt           # Dependencies
+│   ├── __init__.py             # Package init
+│   ├── rag.py                  # RAG pipeline
+│   ├── tools.py                # Lead capture tool
+│   └── agent.py                # Main agent logic
+├── main.py                     # Entry point
+├── requirements.txt            # Dependencies
 └── README.md
 
 ---
