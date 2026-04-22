@@ -47,7 +47,7 @@ def retrieve_context(query: str) -> str:
         context_parts.append("=== About AutoStream ===")
         context_parts.append(kb["company"]["description"])
 
-    # If nothing matched, return all info
+    
     if not context_parts:
         context_parts.append("=== AutoStream Complete Information ===")
         for plan in kb["plans"]:
