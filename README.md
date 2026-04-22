@@ -69,9 +69,9 @@ python3 main.py
 
 ## Sample Conversation
 
-============================================================
+
   Welcome to AutoStream AI Assistant 🎬
-============================================================
+
 
 You: Hi there!
 Agent: Welcome to AutoStream! We help content creators automate 
@@ -94,12 +94,12 @@ Agent: Perfect! Which platform do you create content on?
 You: YouTube
 Agent: 🎉 You're all set! Our team will reach out within 24 hours!
 
-==================================================
+
 LEAD CAPTURED SUCCESSFULLY!
 Name     : John Doe
 Email    : john@gmail.com
 Platform : YouTube
-==================================================
+
 
 ---
 
