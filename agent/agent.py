@@ -66,7 +66,7 @@ def detect_intent(state: AgentState) -> AgentState:
 # Node 2: Generate AI Response using Groq
 
 def generate_response(state: AgentState) -> AgentState:
-    """Use Gemini to generate a response based on intent and context"""
+    """Use Groq to generate a response based on intent and context"""
 
     intent = state["intent"]
     last_user_message = state["messages"][-1]["content"]
@@ -142,7 +142,7 @@ def collect_lead_info(state: AgentState) -> AgentState:
         if validate_name(last_user_message):
             state["lead_name"] = last_user_message
             state["last_asked"] = "email"
-            response = f"Nice to meet you, {last_user_message}! 😊 Could you share your email address so we can send you the account details?"
+            response = f"Nice to meet you, {last_user_message}! Could you share your email address so we can send you the account details?"
         else:
             response = "Could you please share your full name?"
 
@@ -151,7 +151,7 @@ def collect_lead_info(state: AgentState) -> AgentState:
         if validate_email(last_user_message):
             state["lead_email"] = last_user_message
             state["last_asked"] = "platform"
-            response = "Perfect! 📧 And which platform do you mainly create content on? (e.g., YouTube, Instagram, TikTok, etc.)"
+            response = "Perfect! And which platform do you mainly create content on? (e.g., YouTube, Instagram, TikTok, etc.)"
         else:
             response = "That doesn't look like a valid email. Could you double-check and share it again?"
 
@@ -169,13 +169,13 @@ def collect_lead_info(state: AgentState) -> AgentState:
             )
 
             state["lead_captured"] = True
-            response = f"""🎉 You're all set, {state['lead_name']}!
+            response = f""" You're all set, {state['lead_name']}!
 
 Our team will reach out to you at **{state['lead_email']}** within 24 hours to get your AutoStream Pro account activated.
 
 Welcome to the AutoStream family!  If you have any questions before then, feel free to ask!"""
         else:
-            response = "Could you tell me which platform you create content on? (e.g., YouTube, Instagram, TikTok, Facebook, etc.)"
+            response = "Could you tell me which platform you create content on? (e.g., YouTube, Instagram, Facebook, etc.)"
 
     else:
         response = "Let me help you get started! Could you share your full name?"
@@ -203,7 +203,6 @@ def router(state: AgentState) -> str:
 
 
 # Build the LangGraph
-
 def build_agent():
     """Build and compile the LangGraph agent"""
 
@@ -231,7 +230,6 @@ def build_agent():
     return graph.compile()
 
 # Initial State
-
 def get_initial_state() -> AgentState:
     return {
         "messages": [],
