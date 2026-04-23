@@ -2,7 +2,7 @@ from agent.agent import build_agent, get_initial_state
 
 def main():
     print("\n" + "="*60)
-    print("  Welcome to AutoStream AI Assistant 🎬")
+    print("  Welcome to AutoStream AI Assistant")
     print("  Automated Video Editing for Content Creators")
     print("="*60)
     print("  Type 'quit' or 'exit' to stop the conversation")
@@ -17,7 +17,7 @@ def main():
         user_input = input("You: ").strip()
        
         if user_input.lower() in ["quit", "exit", "bye", "goodbye"]:
-            print("\nAgent: Thanks for chatting! Have a great day! 👋\n")
+            print("\nAgent: Thanks for chatting! Have a great day! \n")
             break
 
         if not user_input:
