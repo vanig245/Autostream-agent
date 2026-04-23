@@ -4,7 +4,7 @@ def mock_lead_capture(name: str, email: str, platform: str) -> dict:
     In real world, this would send data to a CRM like HubSpot or Salesforce.
     """
     print("\n" + "="*50)
-    print("✅  LEAD CAPTURED SUCCESSFULLY!")
+    print("LEAD CAPTURED SUCCESSFULLY!")
     print("="*50)
     print(f"  Name     : {name}")
     print(f"  Email    : {email}")
