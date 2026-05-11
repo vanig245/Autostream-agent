@@ -24,7 +24,8 @@ def mock_lead_capture(name: str, email: str, platform: str) -> dict:
 
 def validate_email(email: str) -> bool:
     """Basic email validation"""
-    return "@" in email and "." in email
+    # return "@" in email and "." in email
+    return email.endswith("@gmail.com")
 
 
 def validate_name(name: str) -> bool:

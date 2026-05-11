@@ -45,7 +45,7 @@ autostream-agent/
 ## How to Run Locally
 
 ### 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/autostream-agent.git
+git clone https://github.com/vanig245/autostream-agent.git
 cd autostream-agent
 
 ### 2. Create virtual environment
@@ -95,7 +95,7 @@ You: john@gmail.com
 Agent: Perfect! Which platform do you create content on?
 
 You: YouTube
-Agent: 🎉 You're all set! Our team will reach out within 24 hours!
+Agent: You're all set! Our team will reach out within 24 hours!
 
 
 LEAD CAPTURED SUCCESSFULLY!
